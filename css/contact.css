@@ -1,0 +1,153 @@
+.contact-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/about/banner.png);
+    background-size: cover;
+    padding-block: 5rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-header h1,
+.contact-header p {
+    color: white;
+}
+
+
+.maps{
+    padding-block: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.maps-text{
+    padding: 1.25rem;
+}
+
+@media (width<62rem) {
+    .maps{
+        flex-direction: column;
+    }
+}
+
+
+
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 400px;
+    width: 500px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 400px;
+    width: 500px;
+}
+
+@media (width<48rem) {
+    .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 400px;
+            width: 100%;
+        }
+    
+        .mapouter {
+            position: relative;
+            text-align: right;
+            height: 400px;
+            width: 100%;
+        }
+}
+
+.leave-message{
+    margin: 1.875rem;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    border:3px solid #9f9a9a;
+    border-radius: 5px;
+}
+
+.form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form input{
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+}
+.form textarea{
+    width: 100%;
+    outline: none;
+    padding: 1.25rem;
+}
+.submit{
+    cursor: pointer;
+    width: 6rem;
+    padding: 1rem;
+    border: none;
+    background-color: var(--main-clr);
+    color:white;
+    font-weight: 600;
+}
+.submit:hover{
+    box-shadow: 1px 1px 10px #000;
+}
+.contacts{
+    margin-block: auto;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    margin-block-end: 2rem;
+}
+.avatar img{
+    margin-inline-end: 0.5rem;
+    object-fit: cover;
+}
+.avatar-inf{
+    display: flex;
+    flex-direction: column;
+}
+.avatar-inf h3,
+.avatar-inf p{
+    font-size: 0.7rem;
+    margin: 0.1rem;
+}
+
+@media (width<62rem) {
+    .leave-message{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1.25rem;
+    }
+    .form{
+        width: 100%;
+        text-align: center;
+    }
+    .submit{
+        margin-inline: auto;
+    }
+    .contacts{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+@media (width<48rem){
+    .avatar img{
+        width: 4rem;
+    }
+}

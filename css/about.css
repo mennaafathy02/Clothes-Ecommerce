@@ -1,0 +1,77 @@
+.about-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/about/banner.png);
+    background-size: cover;
+    padding-block: 5rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-header h1,
+.about-header p {
+    color: white;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thumbnail{
+    width: 25rem;
+}
+.about-text{
+    width: 40rem;
+    padding: 1.25rem;
+}
+
+.underline{
+    text-decoration: underline dashed;
+    text-align: start;
+}
+.footer{
+    text-align: end;
+    background-color: #adadad;
+}
+@media (width<62rem) {
+    .about{
+        flex-direction: column;
+    }
+}
+@media (width<48rem) {
+    .about-text {
+        width: 100%;
+    }
+    .about.section-p1{
+        padding-inline: 1rem !important;
+        text-align: center;
+    }
+}
+@media (width<36rem) {
+    .thumbnail{
+        width: 100%;
+    }
+}
+
+
+.donwload-our-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+}
+.donwload-our-app h2 .app{
+    color: #60035a;
+    text-decoration: underline;
+}
+.donwload-our-app video{
+    width: 30rem;
+    border-radius: 20px;
+}
+
+@media (width<36rem) {
+    .donwload-our-app video {
+        width: 100%;
+    }
+}
